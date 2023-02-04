@@ -8,12 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var pressed = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Button("Generate Comment", action: {
+                pressed = true
+            })
+            
+            if pressed {
+                Text("I really enjoyed this subject!")
+            }
+            else if pressed == false {
+                
+            }
+            
+        }
     }
 }
 
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
