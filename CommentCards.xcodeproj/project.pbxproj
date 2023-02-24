@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A45C4C929A8E6190084F974 /* Divisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A45C4C829A8E6190084F974 /* Divisions.swift */; };
+		6A45C4CB29A8E7970084F974 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A45C4CA29A8E7970084F974 /* Comment.swift */; };
 		6ACA5066298E6F36002749AE /* CommentCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA5065298E6F36002749AE /* CommentCardsApp.swift */; };
 		6ACA5068298E6F36002749AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA5067298E6F36002749AE /* ContentView.swift */; };
 		6ACA506A298E6F38002749AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA5069298E6F38002749AE /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A45C4C829A8E6190084F974 /* Divisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divisions.swift; sourceTree = "<group>"; };
+		6A45C4CA29A8E7970084F974 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		6ACA5062298E6F36002749AE /* CommentCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACA5065298E6F36002749AE /* CommentCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardsApp.swift; sourceTree = "<group>"; };
 		6ACA5067298E6F36002749AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A45C4C129A8DDD10084F974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6ACA5065298E6F36002749AE /* CommentCardsApp.swift */,
+				6ACA5067298E6F36002749AE /* ContentView.swift */,
+				6A45C4CA29A8E7970084F974 /* Comment.swift */,
+				6ACA5069298E6F38002749AE /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A45C4C329A8DDFE0084F974 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A45C4C829A8E6190084F974 /* Divisions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6ACA5059298E6F36002749AE = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +117,8 @@
 		6ACA5064298E6F36002749AE /* CommentCards */ = {
 			isa = PBXGroup;
 			children = (
-				6ACA5065298E6F36002749AE /* CommentCardsApp.swift */,
-				6ACA5067298E6F36002749AE /* ContentView.swift */,
-				6ACA5069298E6F38002749AE /* Assets.xcassets */,
+				6A45C4C129A8DDD10084F974 /* Views */,
+				6A45C4C329A8DDFE0084F974 /* Model */,
 				6ACA506B298E6F38002749AE /* Preview Content */,
 			);
 			path = CommentCards;
@@ -258,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACA5068298E6F36002749AE /* ContentView.swift in Sources */,
+				6A45C4C929A8E6190084F974 /* Divisions.swift in Sources */,
 				6ACA5066298E6F36002749AE /* CommentCardsApp.swift in Sources */,
+				6A45C4CB29A8E7970084F974 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

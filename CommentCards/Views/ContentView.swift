@@ -9,19 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State var pressed = false
+    var random_counter = 1
+    
     var body: some View {
         VStack {
-            Button("Generate Comment", action: {
-                pressed = true
+           Text("DIVS:")
+                .font(.title)
+           Button("Export to Excel", action: {
+                print(" ")
             })
+                .buttonStyle(.bordered)
             
-            if pressed {
-                Text("I really enjoyed this subject!")
-            }
-            else if pressed == false {
-                
-            }
             
+        
         }
     }
 }
