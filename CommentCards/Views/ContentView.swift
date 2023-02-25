@@ -15,11 +15,21 @@ struct ContentView: View {
         VStack {
            Text("DIVS:")
                 .font(.title)
+           Spacer()
+           
+            List {
+           Text("CmDay-5")
+           Text("CmPdw-5")
+           Text("CpHyz-3")
+           Text("CCOMX-1")
+            }
+            
+            
            Button("Export to Excel", action: {
                 print(" ")
             })
                 .buttonStyle(.bordered)
-            
+            Spacer()
             
         
         }

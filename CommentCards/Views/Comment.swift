@@ -10,7 +10,8 @@ import SwiftUI
 struct Comment: View {
     @State var pressed = false
     @State var current_comment = " "
-    @State var subject_comment = "I love this subject"
+    var generic_Comment = "I love this subject"
+    
     
     var body: some View {
         VStack {
@@ -22,11 +23,12 @@ struct Comment: View {
             }
             
             Spacer()
-            Button("Generate Comment", action: { pressed = button_choice(current_state: pressed)
+            Button("Generate Comment", action: {
+                current_comment = generic_Comment
             })
                 .buttonStyle(.bordered)
             if pressed == true {
-                    Text("\(subject_comment)")
+                    Text("\(generic_Comment)")
             }
             Spacer()
             Button("Save", action:{ print(" ") })
